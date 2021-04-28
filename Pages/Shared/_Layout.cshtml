@@ -1,0 +1,575 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title> LEARN ENGLISH</title>
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- web fonts -->
+    <link href="//fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <!-- //web fonts -->
+    <!-- Template CSS -->
+
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/style-starter.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+
+    @*<header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-page="/Index">PROYECTO_ESCUELA_DE_INGLES</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                        <partial name="_LoginPartial" />
+                    </div>
+                </div>
+            </nav>
+        </header>*@
+    @*<div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>*@
+
+    @*<footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - PROYECTO_ESCUELA_DE_INGLES - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </div>
+        </footer>*@
+
+    <!-- Top Menu 1 -->
+
+    <section class="w3l-top-menu-1">
+        <div class="top-hd">
+            <div class="container">
+                <header class="row top-menu-top">
+                    <div class="accounts col-md-9 col-6">
+                        <li class="top_li"><span class="fa fa-phone"></span><a href="tel:+142 5897555">+1809-876-4516</a> </li>
+                        <li class="top_li1"><span class="fa fa-envelope-o"></span> <a href="mailto:Colonjunior07@gmail.com" class="mail"> ServiciosLearnEnglish@gmail.com</a>	</li>
+                    </div>
+                    <div class="social-top col-md-3 col-6">
+                        <a asp-page="/NewFolder/IndexContacto" class="btn btn-secondary btn-theme4">Solicitar Ahora</a>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </section>
+    <!-- //Top Menu 1 -->
+    <!-- /header -->
+    <section class="w3l-bootstrap-header">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2">
+            <div class="container">
+                <a asp-page="/NewFolder/IndexHome" class="navbar-brand" ><span class="fa fa-pencil-square-o "></span> Learn English</a>
+                <!-- if logo is image enable this
+                <a class="navbar-brand" href="#index.html">
+                    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                </a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a asp-page="/NewFolder/IndexHome" class="nav-link" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-page="/NewFolder/IndexNosotros" class="nav-link">Nosotros</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a asp-page="/NewFolder/IndexServicio" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-page="/NewFolder/IndexContacto" class="nav-link">Contacto</a>
+                        </li>
+
+
+                    </ul>
+                    <form action="search-results.html" class="form-inline position-relative my-2 my-lg-0">
+                        <input class="form-control search" type="search" placeholder="Buscar Aquí..." aria-label="Search" required="">
+                        <button class="btn btn-search position-absolute" type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    @RenderBody()
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <section class="w3l-feature-3" id="features">
+        <div class="grid top-bottom mb-lg-5 pb-lg-5">
+            <div class="container">
+
+                <div class="middle-section grid-column text-center">
+                    <div class="three-grids-columns">
+                        <span class="fa fa-laptop"></span>
+                        <h4>Aprende Curso en Línea</h4>
+                        <p>Nuestra ecuela cuenta con lo necesario para brindarte curso online de manera gratuita </p>
+                        <a asp-page="/NewFolder/IndexServicio" class="btn btn-secondary btn-theme3 mt-4">Leer más </a>
+                    </div>
+                    <div class="three-grids-columns">
+                        <span class="fa fa-users"></span>
+                        <h4>Maestros Altamente Calificados</h4>
+                        <p>Nuestra escuela posees los mejores maestros del país</p>
+                        <a asp-page="/NewFolder/IndexServicio" class="btn btn-secondary btn-theme3 mt-4">Leer más </a>
+                    </div>
+                    <div class="three-grids-columns">
+                        <span class="fa fa-book"></span>
+                        <h4>Librería y Tiendas</h4>
+                        <p>Contamos con un librería altamente equipada para mejorar tu desarrollo </p>
+                        <a asp-page="/NewFolder/IndexServicio" class="btn btn-secondary btn-theme3 mt-4">Leer más </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- features-4 block -->
+    <section class="w3l-index1" id="about">
+        <div class="calltoaction-20  py-5 editContent">
+            <div class="container py-md-3">
+
+                <div class="calltoaction-20-content row">
+                    <div class="column center-align-self col-lg-6 pr-lg-5">
+                        <h5 class="editContent">Bienvenido a Nuestro Campus</h5>
+                        <p class="more-gap editContent">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                            architecto, ex veritatis tempora aliquid labore natus autem iusto magni dicta incidunt nostrum
+                            odit veniam voluptas provident minus saepe reiciendis nulla dolore delectus molestias
+                        </p>
+                        <p class="more-gap editContent">
+                            Numquam
+                            architecto, ex veritatis tempora aliquid labore natus autem iusto magni dicta incidunt nostrum
+                            odit veniam voluptas provident
+                        </p>
+                        <a asp-page="/NewFolder/IndexNosotros" class="btn btn-secondary btn-theme2 mt-3" > Leer mas</a>
+                    </div>
+                    <div class="column ccont-left col-lg-6">
+
+                        <img src="~/images/g1.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- features-4 block -->
+    <!-- features-4 block -->
+    <section class="services-12" id="course">
+        <div class="form-12-content">
+            <div class="container">
+                <div class="grid grid-column-2 ">
+
+                    <div class="column1">
+                        <div class="heading">
+                            <h3 class="head text-white">Solicitar Becas</h3>
+                            <h4>las solicitudes de verano de 2021 ya están abiertas</h4>
+                            <p class="my-3 text-white">
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                Nulla mollis dapibus nunc, ut rhoncus
+                                turpis sodales quis. Integer sit amet mattis quam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <a asp-page="/NewFolder/IndexContacto"class="btn btn-secondary btn-theme2 mt-3" > Aplicar aquí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- specifications -->
+    <section class="w3l-index2">
+        <div class="main-w3 py-5" id="stats">
+            <div class="container py-lg-3">
+                <div class="row main-cont-wthree-fea">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="grids-speci1">
+                            <h3 class="title-spe">60</h3>
+                            <p>INSTRUCTORES <br>PROFECIONALES</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
+                        <div class="grids-speci1">
+                            <h3 class="title-spe">18</h3>
+                            <p> NUEVOS CURSOS <br>TODOS LOS AÑOS</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6  mt-lg-0 mt-4">
+                        <div class="grids-speci1">
+                            <h3 class="title-spe">34</h3>
+                            <p>SECCION EN VIVO <br>CADA MES</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
+                        <div class="grids-speci1">
+                            <h3 class="title-spe">20</h3>
+                            <p>ESTUDIANTES <br>REGISTRADOS</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //specifications -->
+        <!-- customers4 block -->
+        <section class="w3l-customers-4" id="testimonials">
+            <div id="customers4-block" class="py-5">
+                <div class="container py-md-3">
+
+                    <div class="section-title align-center row">
+                        <div class="item-top col-md-6 pr-md-5">
+                            <div class="heading">
+                                <h3 class="head text-white">Hear what our students have to say</h3>
+                                <p class="my-3 head text-white">
+                                    Magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicingelit, Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                    Nulla mollis dapibus nunc, ut rhoncus
+                                    turpis sodales quis. Integer sit amet mattis quam.
+                                </p>
+                                <p class="my-3 head text-white">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                    Nulla mollis dapibus nunc, ut rhoncus
+                                    turpis sodales quis. Integer sit amet mattis quam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-top col-md-6 mt-md-0 mt-4">
+                            <div class="item text-center">
+                                <div class="imgTitle">
+
+                                    <img src="~/images/c3.jpg" class="img-responsive" alt="" />
+                                </div>
+                                <h6 class="mt-3">Jessey Rosey</h6>
+                                <p class="">Student</p>
+                                <p> Magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <section class="w3l-price-2" id="news">
+            <div class="price-main py-5">
+                <div class="container py-md-3">
+                    <div class="pricing-style-w3ls row py-md-5">
+                        <div class="pricing-chart col-lg-6">
+                            <h3 class="">ULTIMAS PUBLICACIONES</h3>
+                            <div class="tatest-top mt-md-5 mt-4">
+                                <div class="price-box btn-layout bt6">
+                                    <div class="grid grid-column-2">
+                                        <div class="column-6">
+                                            <img src="~/images/g9.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="column1">
+
+                                            <div class="job-info">
+                                                <h6 class="pricehead"><a href="#">Summer Course Starts </a></h6>
+                                                <h5>April 25, 2021</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit architecto..</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="price-box btn-layout bt6 top-middle-1">
+                                    <div class="grid grid-column-2">
+                                        <div class="column-6">
+
+                                            <img src="~/images/g10.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="column1">
+                                            <div class="job-info">
+                                                <h6 class="pricehead">
+                                                    <a href="#">
+                                                        About Artificial Intelligence
+                                                    </a>
+                                                </h6>
+                                                <h5>March 25, 2020</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit architecto..</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price-box btn-layout bt6">
+                                    <div class="grid grid-column-2">
+                                        <div class="column-6">
+                                            <img src="~/images/g8.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="column1">
+
+                                            <div class="job-info">
+                                                <h6 class="pricehead">
+                                                    <a href="#">
+                                                        New Exam Schedules
+                                                    </a>
+                                                </h6>
+                                                <h5>February 25, 202</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit architecto..</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-right mt-4">
+                                <a class="btn btn-secondary btn-theme2" href="#"> View All</a>
+                            </div>
+                        </div>
+                        <div class="w3l-faq-page col-lg-6 pl-3 pl-lg-5 mt-lg-0 mt-5">
+                            <h3 class="">PROXIMOS EVENTOS</h3>
+                            <div class="events-top mt-md-5 mt-4">
+                                <div class="events-top-left">
+                                    <div class="icon-top">
+                                        <h3>20</h3>
+                                        <p>Nov</p>
+                                        <span>2021</span>
+                                    </div>
+                                </div>
+                                <div class="events-top-right">
+                                    <h6 class="pricehead">
+                                        <a href="#">
+                                            Luctus et ultrices posuere
+                                        </a>
+                                    </h6>
+                                    <p class="mb-2 mt-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+                                    <li>07:00 - 10:00 </li>
+                                    <li class="melb">Melbourne, Australia</li>
+                                </div>
+                            </div>
+                            <div class="events-top mt-4">
+                                <div class="events-top-left">
+                                    <div class="icon-top">
+                                        <h3>25</h3>
+                                        <p>Nov</p>
+                                        <span>2021</span>
+                                    </div>
+                                </div>
+                                <div class="events-top-right">
+                                    <h6 class="pricehead">
+                                        <a href="#">
+                                            Nulla mollis dapibus nunc, ut
+                                        </a>
+                                    </h6>
+                                    <p class="mb-2 mt-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+                                    <li>07:00 - 10:00 </li>
+                                    <li class="melb">Melbourne, Australia</li>
+                                </div>
+                            </div>
+                            <div class="text-right mt-4">
+                                <a class="btn btn-secondary btn-theme2" href="#"> View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- grids block 5 -->
+        <section class="w3l-footer-29-main">
+            <div class="footer-29">
+                <div class="container">
+                    <div class="d-grid grid-col-4 footer-top-29">
+                        <div class="footer-list-29 footer-1">
+                            <h6 class="footer-title-29">Contact Us</h6>
+                            <ul>
+                                <li><p><span class="fa fa-map-marker"></span> Estate Business, #32841 block, #221DRS Real estate business building, UK.</p></li>
+                                <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(21)-255-999-8888</a></li>
+                                <li><a href="mailto:colonjunior07@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span> ServiciosLearnEnglish@gmail.com</a></li>
+                            </ul>
+                            <div class="main-social-footer-29">
+                                <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                                <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                                <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+                                <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                            </div>
+                        </div>
+                        <div class="footer-list-29 footer-2">
+                            <ul>
+                                <h6 class="footer-title-29">Featured Links</h6>
+                                <li><a asp-page="/NewFolder/IndexContacto">Graduation</a></li>
+                                <li><a asp-page="/NewFolder/IndexContacto">Admissions</a></li>
+                                <li><a asp-page="/NewFolder/IndexContacto">Tienda de Libros</a></li>
+                                <li><a asp-page="/NewFolder/IndexContacto">International</a></li>
+                                <li><a asp-page="/NewFolder/IndexContacto">Cursos</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-list-29 footer-3">
+
+                            <h6 class="footer-title-29">Newsletter </h6>
+                            <form action="#" class="subscribe" method="post">
+                                <input type="email" name="email" placeholder="Email" required="">
+                                <button><span class="fa fa-envelope-o"></span></button>
+                            </form>
+                            <p>Subscribe and get our weekly newsletter</p>
+                            <p>We'll never share your email address</p>
+
+                        </div>
+                        <div class="footer-list-29 footer-4">
+                            <ul>
+                                <h6 class="footer-title-29">Quick Links</h6>
+                                <li><a asp-page="/NewFolder/IndexHome">Home</a></li>
+                                <li><a asp-page="/NewFolder/IndexNosotros">Nosotros</a></li>
+                                <li><a asp-page="/NewFolder/IndexServicio">Servicios</a></li>
+                                <li><a href="#"> Blog</a></li>
+                                <li><a asp-page="/NewFolder/IndexContacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-grid grid-col-2 bottom-copies">
+                        <p class="copy-footer-29">© 2020 Mastery. All rights reserved | Designed by <a href="https://w3layouts.com">W3layouts</a></p>
+                        <ul class="list-btm-29">
+                            <li><a href="#link">Privacy policy</a></li>
+                            <li><a href="#link">Terms of service</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fa fa-angle-up"></span>
+            </button>
+            <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("movetop").style.display = "block";
+                    } else {
+                        document.getElementById("movetop").style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+            <!-- /move top -->
+        </section>
+
+
+
+
+        <!-- /move top -->
+    </section>
+
+
+
+
+    <!-- //footer-28 block -->
+    </section>
+    <script>
+
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Template JavaScript -->
+    <script src="~/js/all.js"></script>
+    <!-- Smooth scrolling -->
+    <!-- <script src="assets/js/smoothscroll.js"></script> -->
+
+    <script src="~/js/owl.carousel.js"></script>
+    <!-- script for -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-one').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                responsiveClass: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: true
+                    },
+                    1000: {
+                        items: 1,
+                        nav: true
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script -->
+
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
