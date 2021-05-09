@@ -24,57 +24,24 @@
 
 <body>
 
-    @*<header>
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-page="/Index">PROYECTO_ESCUELA_DE_INGLES</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                            </li>
-                        </ul>
-                        <partial name="_LoginPartial" />
-                    </div>
-                </div>
-            </nav>
-        </header>*@
-    @*<div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>*@
+<!-- Top Menu 1 -->
 
-    @*<footer class="border-top footer text-muted">
+<section class="w3l-top-menu-1">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm top-hd">
             <div class="container">
-                &copy; 2021 - PROYECTO_ESCUELA_DE_INGLES - <a asp-area="" asp-page="/Privacy">Privacy</a>
-            </div>
-        </footer>*@
-
-    <!-- Top Menu 1 -->
-
-    <section class="w3l-top-menu-1">
-        <div class="top-hd">
-            <div class="container">
-                <header class="row top-menu-top">
+                <header class="row top-menu-top col">
                     <div class="accounts col-md-9 col-6">
                         <li class="top_li"><span class="fa fa-phone"></span><a href="tel:+142 5897555">+1 809-876-4516</a> </li>
                         <li class="top_li1"><span class="fa fa-envelope-o"></span> <a href="mailto:Colonjunior07@gmail.com" class="mail"> 2019-0008@unad.edu.do</a>	</li>
                     </div>
                     <div class="social-top col-md-3 col-6">
-                        <a asp-page="/NewFolder/IndexContacto" class="btn btn-secondary btn-theme4">Solicitar Ahora</a>
-                    </div>
+                        @*<a asp-page="/NewFolder/IndexContacto" class="btn btn-secondary btn-theme4">Solicitar Ahora</a>*@
+                        <partial name="_LoginPartial" />
+                     </div>
                 </header>
             </div>
-        </div>
-    </section>
+    </nav>
+</section>
     <!-- //Top Menu 1 -->
     <!-- /header -->
     <section class="w3l-bootstrap-header">
@@ -93,7 +60,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a asp-page="/NewFolder/IndexHome" class="nav-link" >Home</a>
+                            <a asp-page="/NewFolder/IndexHome" class="nav-link" >Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a asp-page="/NewFolder/IndexNosotros" class="nav-link">Nosotros</a>
@@ -170,9 +137,9 @@ Extrañamos sus abrazos, apretones de mano y ver sus rostros sonrientes en nuest
 ¡Estamos aquí, estamos para servirles!
                         </p>
                         <p class="more-gap editContent">
-                            Nunca
-                            el maestro de obras, el grande de la verdad, dijo el justo los tiempos de la caída, sin embargo, nuestro trabajo,
-                            Odio el placer providente
+                            Estamos aquí para ayudarles en su aprendizaje y asistirles para
+                            que puedan alcanzar el nivel más alto de proficiencia posible
+                            en el menor tiempo posible, así que ¡Ven! ¿Qué esperas?
                         </p>
                         <a asp-page="/NewFolder/IndexNosotros" class="btn btn-secondary btn-theme2 mt-3" > Leer mas</a>
                     </div>
@@ -220,7 +187,7 @@ Extrañamos sus abrazos, apretones de mano y ver sus rostros sonrientes en nuest
                     <div class="col-lg-3 col-sm-6">
                         <div class="grids-speci1">
                             <h3 class="title-spe">60</h3>
-                            <p>INSTRUCTORES <br>PROFECIONALES</p>
+                            <p>INSTRUCTORES <br>PROFESIONALES</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
@@ -232,7 +199,7 @@ Extrañamos sus abrazos, apretones de mano y ver sus rostros sonrientes en nuest
                     <div class="col-lg-3 col-sm-6  mt-lg-0 mt-4">
                         <div class="grids-speci1">
                             <h3 class="title-spe">34</h3>
-                            <p>SECCION EN VIVO <br>CADA MES</p>
+                            <p>SECCIÓN EN VIVO <br>CADA MES</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
@@ -429,15 +396,15 @@ Extrañamos sus abrazos, apretones de mano y ver sus rostros sonrientes en nuest
                             <ul>
                                 <h6 class="footer-title-29">Enlaces destacados</h6>
                                 <li><a asp-page="/NewFolder/IndexContacto">Graduacion</a></li>
-                                <li><a asp-page="/NewFolder/IndexContacto">Admissions</a></li>
+                                <li><a asp-page="/NewFolder/IndexContacto">Admisiones</a></li>
                                 <li><a asp-page="/NewFolder/IndexContacto">Tienda de Libros</a></li>
-                                <li><a asp-page="/NewFolder/IndexContacto">International</a></li>
+                                <li><a asp-page="/NewFolder/IndexContacto">Internacional</a></li>
                                 <li><a asp-page="/NewFolder/IndexContacto">Cursos</a></li>
                             </ul>
                         </div>
                         <div class="footer-list-29 footer-3">
 
-                            <h6 class="footer-title-29">Newsletter </h6>
+                            <h6 class="footer-title-29">Boletín</h6>
                             <form action="#" class="subscribe" method="post">
                                 <input type="email" name="email" placeholder="Email" required="">
                                 <button><span class="fa fa-envelope-o"></span></button>
@@ -448,7 +415,7 @@ Extrañamos sus abrazos, apretones de mano y ver sus rostros sonrientes en nuest
                         </div>
                         <div class="footer-list-29 footer-4">
                             <ul>
-                                <h6 class="footer-title-29">Quick Links</h6>
+                                <h6 class="footer-title-29">Acceso rápido</h6>
                                 <li><a asp-page="/NewFolder/IndexHome">Home</a></li>
                                 <li><a asp-page="/NewFolder/IndexNosotros">Nosotros</a></li>
                                 <li><a asp-page="/NewFolder/IndexServicio">Servicios</a></li>
