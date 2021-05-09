@@ -1,0 +1,61 @@
+﻿@page
+@model PROYECTO_FINAL.Pages.Empleados.CreateModel
+
+@using PROYECTO_FINAL.Data;
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@*<h1>Create</h1>*@
+
+<h4>Nuevo Empleado</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EmpleadoModel.Cedula" class="control-label"></label>
+                <input asp-for="CedulaVerificada" class="form-control" />
+                <span asp-validation-for="CedulaVerificada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmpleadoModel.Nombre" class="control-label"></label>
+                <input asp-for="EmpleadoModel.Nombre" class="form-control" />
+                <span asp-validation-for="EmpleadoModel.Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmpleadoModel.Apellidos" class="control-label"></label>
+                <input asp-for="EmpleadoModel.Apellidos" class="form-control" />
+                <span asp-validation-for="EmpleadoModel.Apellidos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmpleadoModel.DoB" class="control-label"></label>
+                <input asp-for="EmpleadoModel.DoB" class="form-control" />
+                <span asp-validation-for="EmpleadoModel.DoB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmpleadoModel.Sexo" class="control-label"></label>
+                <select asp-for="EmpleadoModel.Sexo" asp-items="@Html.GetEnumSelectList(typeof(SEXO)) "class="form-control"></select>
+                <span asp-validation-for="EmpleadoModel.Sexo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmpleadoModel.Cargo" class="control-label"></label>
+                <select asp-for="EmpleadoModel.Cargo" asp-items="@Html.GetEnumSelectList(typeof(TipoEmpleado))" class="form-control"></select>
+                <span asp-validation-for="EmpleadoModel.Cargo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
